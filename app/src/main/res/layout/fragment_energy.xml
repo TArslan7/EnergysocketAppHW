@@ -1,0 +1,56 @@
+<!-- fragment_energy.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Bestaande TextView -->
+    <TextView
+        android:id="@+id/textViewEnergyCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="@string/energy_cost_0_00" />
+
+    <!-- RecyclerView toegevoegd hier -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEnergyData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <!-- Andere attributen kunnen hier worden toegevoegd, zoals layout_manager en padding -->
+    <Button
+        android:id="@+id/buttonTogglePower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Power"
+        android:onClick="onTogglePowerClicked" />
+    <Button
+        android:id="@+id/buttonToggleLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Lock" />
+
+    <EditText
+        android:id="@+id/editTextEnergyRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Voer het energietarief in (per kWh)"
+        android:inputType="numberDecimal"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/buttonCalculateCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Cost"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <!-- Andere UI-elementen kunnen hier worden toegevoegd indien nodig -->
+
+</LinearLayout>

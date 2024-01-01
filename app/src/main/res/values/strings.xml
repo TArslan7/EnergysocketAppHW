@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">energysocketapp</string>
+    <string name="energy_cost_format">Energy Cost: $%.2f</string>
+    <string name="energy_cost_0_00">Energy Cost: $0.00</string>
+</resources>
