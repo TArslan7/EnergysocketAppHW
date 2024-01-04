@@ -106,7 +106,7 @@ class EnergySocketViewModel(private val repository: EnergySocketRepository) : Vi
         )
 
         // Stel de boolean waarde in op basis van de powerOn variabele die je hebt
-        powerRequest.powerOn = powerOn // Stel de boolean in de PowerRequest in op basis van je powerOn variabele
+        //powerRequest.powerOn = powerOn // Stel de boolean in de PowerRequest in op basis van je powerOn variabele
 
         viewModelScope.launch {
             try {
